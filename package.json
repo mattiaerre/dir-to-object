@@ -1,6 +1,6 @@
 {
   "name": "dir-to-object",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Builds an object from the files contained inside a directory.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "email": "mattia.richetto@gmail.com",
     "name": "Mattia Richetto"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mattiaerre/dir-to-object/issues"
   },
