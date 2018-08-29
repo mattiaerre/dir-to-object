@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dirToObject to match snapshot 1`] = `
+Object {
+  "info": Object {
+    "name": "dir-to-object",
+    "version": "1.0.0-alpha.1",
+  },
+}
+`;
