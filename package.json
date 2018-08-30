@@ -1,6 +1,6 @@
 {
   "name": "dir-to-object",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-beta.1",
   "description": "Builds an object from the files contained inside a directory.",
   "main": "index.js",
   "scripts": {

@@ -24,11 +24,16 @@ const foo = dirToObject(config);
 console.log(foo);
 ```
 
-N.B.: `canAdd` is optional while `dirPath` is mandatory
+Where **config** is an object with the following properties:
+
+| name    | type                          | example                             | required or optional |
+| ------- | ----------------------------- | ----------------------------------- | -------------------- |
+| canAdd  | _function_: (data) => boolean | `data => data.resolve && data.type` | _optional_           |
+| dirPath | _string_                      | `join(__dirname, 'foo')`            | _required_           |
 
 ## Contributing
 
-1. Fork it (<https://github.com/mattiaerre/dir-to-object/fork>)
+1. [Fork it](https://github.com/mattiaerre/dir-to-object/fork)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
