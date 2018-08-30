@@ -1,12 +1,13 @@
 {
   "name": "dir-to-object",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "Builds an object from the files contained inside a directory.",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint src/**",
     "pretest": "npm run eslint",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",

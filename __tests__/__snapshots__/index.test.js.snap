@@ -1,10 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`dirToObject to match snapshot 1`] = `
+exports[`dirToObject config w/ canAdd and dirPath 1`] = `
 Object {
+  "currencies": Object {
+    "resolve": [Function],
+    "type": Array [
+      Object {
+        "id": "string",
+        "name": "string",
+      },
+    ],
+  },
+}
+`;
+
+exports[`dirToObject config w/ dirPath only 1`] = `
+Object {
+  "currencies": Object {
+    "resolve": [Function],
+    "type": Array [
+      Object {
+        "id": "string",
+        "name": "string",
+      },
+    ],
+  },
   "info": Object {
     "name": "dir-to-object",
-    "version": "1.0.0-alpha.3",
+    "version": "1.0.0-alpha.4",
   },
 }
 `;

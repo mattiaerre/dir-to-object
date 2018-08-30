@@ -14,10 +14,17 @@ npm install dir-to-object
 const dirToObject = require('dir-to-object');
 const { join } = require('path');
 
-const foo = dirToObject(join(__dirname, 'foo'));
+const config = {
+  canAdd: () => true,
+  dirPath: join(__dirname, 'foo')
+};
+
+const foo = dirToObject(config);
 
 console.log(foo);
 ```
+
+N.B.: `canAdd` is optional while `dirPath` is mandatory
 
 ## Contributing
 
