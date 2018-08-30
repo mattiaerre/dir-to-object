@@ -4,7 +4,7 @@ exports[`dirToObject to match snapshot 1`] = `
 Object {
   "info": Object {
     "name": "dir-to-object",
-    "version": "1.0.0-alpha.1",
+    "version": "1.0.0-alpha.3",
   },
 }
 `;
