@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint src/**",
-    "pretest": "npm run eslint",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "test:watch": "jest --watch"
   },
   "repository": {
