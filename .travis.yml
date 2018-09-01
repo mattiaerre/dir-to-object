@@ -1,5 +1,5 @@
 after_script:
-  - npm run test:coverage
+  - npm run coverage
 language: node_js
 node_js:
   - '6'
