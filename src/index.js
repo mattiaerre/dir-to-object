@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { join } = require('path');
 
-const fields = ({ canAdd, dirPath }) =>
+const dirToObject = ({ canAdd, dirPath }) =>
   fs.readdirSync(dirPath).reduce((accumulator, fileName) => {
     const filePath = join(dirPath, fileName);
     // eslint-disable-next-line global-require, import/no-dynamic-require
@@ -15,4 +15,4 @@ const fields = ({ canAdd, dirPath }) =>
     return accumulator;
   }, {});
 
-module.exports = fields;
+module.exports = dirToObject;
