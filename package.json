@@ -4,9 +4,10 @@
   "description": "Builds an object from the files contained inside a directory.",
   "main": "index.js",
   "scripts": {
+    "coverage": "codecov",
     "eslint": "eslint src/**",
-    "pretest": "npm run eslint",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "test:watch": "jest --watch"
   },
   "repository": {
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/mattiaerre/dir-to-object#readme",
   "devDependencies": {
+    "codecov": "3.0.4",
     "eslint": "5.4.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "3.0.1",
