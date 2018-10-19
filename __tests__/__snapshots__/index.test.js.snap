@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`dirToObject config w/ canAdd and dirPath 1`] = `
+exports[`dirToObject v1 config w/ canAdd and dirPath 1`] = `
 Object {
   "currencies": Object {
     "resolve": [Function],
@@ -14,7 +14,39 @@ Object {
 }
 `;
 
-exports[`dirToObject config w/ dirPath only 1`] = `
+exports[`dirToObject v1 config w/ dirPath only 1`] = `
+Object {
+  "currencies": Object {
+    "resolve": [Function],
+    "type": Array [
+      Object {
+        "id": "string",
+        "name": "string",
+      },
+    ],
+  },
+  "info": Object {
+    "name": "dir-to-object",
+    "version": "1.0.0",
+  },
+}
+`;
+
+exports[`dirToObject v2 w/ path and options 1`] = `
+Object {
+  "currencies": Object {
+    "resolve": [Function],
+    "type": Array [
+      Object {
+        "id": "string",
+        "name": "string",
+      },
+    ],
+  },
+}
+`;
+
+exports[`dirToObject v2 w/ path only 1`] = `
 Object {
   "currencies": Object {
     "resolve": [Function],
