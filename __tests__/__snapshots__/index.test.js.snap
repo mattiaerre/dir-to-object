@@ -27,7 +27,7 @@ Object {
   },
   "info": Object {
     "name": "dir-to-object",
-    "version": "1.0.0",
+    "version": "2.0.0",
   },
 }
 `;
@@ -59,7 +59,7 @@ Object {
   },
   "info": Object {
     "name": "dir-to-object",
-    "version": "1.0.0",
+    "version": "2.0.0",
   },
 }
 `;
