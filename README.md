@@ -14,22 +14,24 @@ npm install dir-to-object
 const dirToObject = require('dir-to-object');
 const { join } = require('path');
 
-const config = {
-  canAdd: () => true,
-  dirPath: join(__dirname, 'foo')
-};
+const path = join(__dirname, './__mocks__/foo');
 
-const foo = dirToObject(config);
+const options = { canAdd: () => true };
 
-console.log(foo);
+const bar = dirToObject(path, options);
+
+console.log(bar);
 ```
 
-Where **config** is an object with the following properties:
+Where **path** is a string and it is required:
 
-| name    | type                          | example                             | required or optional |
-| ------- | ----------------------------- | ----------------------------------- | -------------------- |
-| canAdd  | _function_: (data) => boolean | `data => data.resolve && data.type` | _optional_           |
-| dirPath | _string_                      | `join(__dirname, 'foo')`            | _required_           |
+> e.g.: `join(__dirname, './foo')`
+
+And where **config** is an object with the following property:
+
+| name   | type                          | example                             | required or optional |
+| ------ | ----------------------------- | ----------------------------------- | -------------------- |
+| canAdd | _function_: (data) => boolean | `data => data.resolve && data.type` | _optional_           |
 
 ## Contributing
 
