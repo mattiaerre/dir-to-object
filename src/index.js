@@ -22,6 +22,9 @@ function dirToObjectV1({ canAdd, dirPath }) {
 
 function dirToObject(path, options = {}) {
   if (typeof path === 'object') {
+    console.warn(
+      'WARNING: since v2 `dirToObject` should NOT be invoked w/ (config) but w/ (path, options) instead.'
+    );
     return dirToObjectV1(path);
   }
   return dirToObjectV2(path, options);
